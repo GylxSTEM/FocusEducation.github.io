@@ -1,0 +1,145 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    color: #262526;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #262526;
+    color: #f3f3f3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 1rem;
+}
+
+header nav ul li a.active {
+    border-bottom: 2px solid #f3f3f3;
+}
+
+
+
+.hero {
+    background-color: #d7d8da;
+    padding: 40px;
+    text-align: center;
+    height: 20vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    color: #262526;
+    margin-bottom: 10px;
+    font-size: 2.5rem; 
+}
+
+.hero p {
+    color: #7f8084;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    flex: 1;
+    height: calc(100vh - 40vh - 80px); 
+    display: flex;
+    align-items: center; 
+}
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #afb2b7;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    color: #262526;
+    margin-top: 0;
+}
+
+.card p {
+    color: #7f8084;
+    margin-bottom: 20px;
+}
+
+.card .cta-button {
+    background-color: #262526;
+    color: #f3f3f3;
+    text-decoration: none;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.card .cta-button:hover {
+    background-color: #7f8084;
+}
+
+
+footer {
+    background-color: #262526;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; 
+}
+
+footer p {
+    margin: 0;
+}
